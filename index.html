@@ -100,8 +100,10 @@
         justify-content: space-evenly ;
 
       }
-      .divider{
-        color: linear-gradient(90deg, rgba(255, 0, 0, 0.39) 100%);
+      hr{
+        height: 1px; /* Set the height of the horizontal rule */
+    border: none;
+    background-image: linear-gradient(to right, #ff0000, #00ff00); /* Gradient colors */
       }
 
 
@@ -211,7 +213,21 @@
       }
 
       .footer-title{
-        
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      .footer-description,.footer-copyright{
+        font-size: 14px;
+        font-weight: 400;
+      }
+
+      .footer-social{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        color: #FFF; 
+        padding-bottom: 50px;
       }
 
 
