@@ -107,6 +107,10 @@
 
       /*Collection-section*/
 
+      .collection-container{
+        margin-bottom: 100px;
+      }
+
       .popular-collection-title{
         text-align: center;
         margin-top: 50px;
@@ -166,11 +170,48 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 50px;
-        margin-bottom: 50px;
         max-width: 1200px;
         margin: 0 auto;
-        gap: 90px; ;
+        gap: 70px; ;
+      }
+      .features-title{
+        color: #0A0826;
+        font-feature-settings: 'clig' off, 'liga' off;;
+        font-size: 38px;
+        font-weight: 700;
+      }
+
+      .features-description{
+        width:500px ;
+        color: #6C6C6C;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: 16px;
+        font-weight: 700;
+      }
+
+      .features-btn{
+        background: #E02C6D;
+        padding: 10px 24px;
+        gap: 8px;
+        color: #FFF;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: 16px;
+        font-weight: 700;
+        border: none;
+      }
+
+      footer{
+        background: #0A0826;
+        margin-top: 100px;
+      }
+      .footer-container{
+       padding-top: 50px;
+        text-align: center;
+        color: #FFF;
+      }
+
+      .footer-title{
+        
       }
 
 
@@ -325,10 +366,24 @@
           <div class="features">
             <h3 class="features-title">Featured products at one place</h3>
             <p class="features-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            <button class="features-btn" type="button">Join Now</button>
+            <button class="features-btn" type="button">Join Now <i class="fa-solid fa-arrow-right"></i></button>
             </div>
       </section>
     </main>
+
+    <footer>
+      <div class="footer-container">
+        <h2 class="footer-title">Influencer products</h2>
+        <p class="footer-description">Copyright © 2020  influencer products</p>
+        <p class="footer-copyright">Influencer products</p>
+      </div>
+      <div class="footer-social">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+    </footer>
 
   </body>
 </html>
