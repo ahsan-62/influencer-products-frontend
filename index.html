@@ -322,6 +322,28 @@
             align-items: center;
             text-align: center;
           }
+
+          .popular-collection{
+            grid-template-columns: repeat(2, 1fr);
+           padding: 0px 30px;
+           }
+
+           .features-container{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+           }
+
+           .features-container>.features>img{
+            width: 80%;
+           }
+           .features{
+            width: 80%;
+           }
+           .features-description{
+            width: 100%;
+           }
       }
 
 
@@ -395,7 +417,7 @@
 
     <main>
 
-      <section class="collection-container hide">
+      <section class="collection-container">
         <h2 class="popular-collection-title">Popular Collection</h2>
         <div class="popular-collection">
         <div class="collection">
