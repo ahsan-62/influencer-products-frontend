@@ -240,7 +240,7 @@
       @media screen and (max-width: 576px) {
 
         header{
-          padding: 20px 10px;
+          padding: 20px 5px;
         }
 
         .header-title{
@@ -253,21 +253,55 @@
           text-align: center;
         }
         nav>ul{
-          gap: 10px;
+          flex-direction: column;
+          text-align: center;
+          padding: 0px;
         }
         .banner-container{
           flex-direction: column;
         }
         .poster{
           flex-direction: column;
+          gap: 20px;
+          align-items: center;
+        }
+
+        .poster img{
+          width: 40%;
         }
         .banner-title,.banner-description{
           text-align: center;
           margin-top: 5px;
         }
-        
-      
 
+        .banner-img img{
+          width: 100%;
+        }
+
+        .banner-button{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        
+      }
+
+      @media screen and (min-width: 577px) and (max-width: 992px) {
+
+
+          nav{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+          }
+          .banner-container{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          }
+          
+          
         
       }
 
@@ -316,7 +350,10 @@
         <div class="banner">
           <h2 class="banner-title">Start your Journey as <br>Influencer</h2>
           <p class="banner-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sem vestibulum sed scelerisque eros. Lectus faucibus.</p>
-          <button class="banner-btn" type="button">Prebook Now</button>
+          <div class="banner-button">
+            <button class="banner-btn" type="button">Prebook Now</button>
+          </div>
+          
           </div>
           <div class="banner-img">
             <img src="images/main-camera.png" alt="">
