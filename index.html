@@ -186,7 +186,6 @@
       .features-description{
         width:500px ;
         color: #6C6C6C;
-        font-feature-settings: 'clig' off, 'liga' off;
         font-size: 16px;
         font-weight: 700;
       }
@@ -283,6 +282,29 @@
           align-items: center;
           justify-content: center;
         }
+
+       .popular-collection{
+        grid-template-columns: repeat(1, 1fr);
+       padding: 0px 10px;
+       }
+
+       .features-container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+       }
+
+       .features-container>.features>img{
+        width: 80%;
+       }
+       .features{
+        width: 80%;
+       }
+       .features-description{
+        width: 100%;
+       }
+       
         
       }
 
@@ -300,9 +322,6 @@
             align-items: center;
             text-align: center;
           }
-          
-          
-        
       }
 
 
@@ -313,7 +332,7 @@
     </style>
   </head>
   <body>
-    <header>
+    <header class="hide">
       <nav>
         <h1 class="header-title">Influencer Gadgets</h1>
         <ul>
@@ -374,9 +393,9 @@
     </div>
     </header>
 
-    <main class="hide">
+    <main>
 
-      <section class="collection-container">
+      <section class="collection-container hide">
         <h2 class="popular-collection-title">Popular Collection</h2>
         <div class="popular-collection">
         <div class="collection">
